@@ -54,6 +54,12 @@ Verify:
 exiftool -ver
 ```
 
+4. Clone the repository
+5. Install dependencies:
+
+   pip install -r requirements.txt
+
+
 ---
 
 ## Usage
