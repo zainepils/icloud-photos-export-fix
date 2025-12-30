@@ -1,8 +1,10 @@
 # iCloud Photos Export – Date Fixer
 
-This tool fixes incorrect or missing "Date Taken" metadata in Apple iCloud photo exports by restoring the original capture timestamps from Apple’s metadata files.
+Apple’s iCloud photo exports often lose or corrupt the original “Date Taken” metadata, causing photos to appear in the wrong order or wrong year when imported into other apps.
 
-It is designed for large libraries and safely processes tens of thousands of photos.
+This tool fixes that problem by reading Apple’s own metadata files and restoring the correct capture timestamps directly into each photo and video. It safely rebuilds accurate EXIF data so your library sorts correctly in any photo manager, including Immich, Lightroom, and Photos.
+
+Designed for large libraries, it processes tens of thousands of files reliably while keeping the original media untouched.
 
 ---
 
@@ -62,7 +64,7 @@ Run the script from the directory containing your iCloud folders:
 python sort_icloud_photos.py
 ```
 
-To resume a partial run:
+To resume a partial run in cases of powercuts or other failures:
 
 ```
 python finish_icloud_photos.py
